@@ -20,7 +20,7 @@ Run:
 Usage:
 
 Create a new short url: 
-curl <host>:8080/add -d "url=<longurl>"
+curl localhost:8080/add -d "url=http://example.com"
 
 View stats:
-curl <host>:8080/<shorturl>/stats
+curl localhost:8080/shorturl/stats
