@@ -1,26 +1,24 @@
-A URL shortnet writting in Golang, as a sample project
+#goshortner
+A URL shortner written in Golang as a sample project
 
-To use:
+##Prerequisites
+####Get redigo:
+`go get github.com/garyburd/redigo/redis`
 
-Get code:
-git clone https://github.com/ttpears/goshortner-sample.git
+####Get mux:
+`go get github.com/gorilla/mux`
 
-Get redigo:
-go get github.com/garyburd/redigo/redis
+###Get code:
+`git clone https://github.com/ttpears/goshortner-sample.git`
 
-Get mux:
-go get github.com/gorilla/mux
+##Build:
+`go build`
 
-Build:
-go build
+##Usage:
+`./goshortner`
 
-Run:
-./goshortner
+###Create a new short url: 
+`curl localhost:8080/add -d "url=http://example.com"`
 
-Usage:
-
-Create a new short url: 
-curl localhost:8080/add -d "url=http://example.com"
-
-View stats:
-curl localhost:8080/shorturl/stats
+###View stats:
+`curl localhost:8080/shorturl/stats`
